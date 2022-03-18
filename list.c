@@ -39,8 +39,8 @@ void * firstList(List * list) {
   list->current = list->head;
   if (list->current == NULL) return NULL;
   
-  void * dato = list->current->data;
-  return dato ;
+  
+  return (list->current->data);
 }
 
 void * nextList(List * list) {
@@ -52,7 +52,9 @@ void * nextList(List * list) {
 }
 
 void * lastList(List * list) {
-    return NULL;
+  if (list->last == NULL || list->current == NULL) return NULL;
+  list->current = list->last;
+  return list->current ;
 }
 
 void * prevList(List * list) {
