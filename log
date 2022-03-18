@@ -16,3 +16,20 @@ Fri Mar 18 14:38:46 UTC 2022:
  tests:  1|5
 total_score: 10/70
 9ed5fe9
+Fri Mar 18 14:48:55 UTC 2022: 
+ list.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘firstList’:
+list.c:39:19: error: implicit declaration of function ‘first’ [-Werror=implicit-function-declaration]
+   list->current = first(list);
+                   ^~~~~
+list.c:39:17: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+   list->current = first(list);
+                 ^
+list.c:42:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+bf78af9
