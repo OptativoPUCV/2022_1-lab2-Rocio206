@@ -37,12 +37,16 @@ List * createList() {
 
 void * firstList(List * list) {
   list->current = list->head;
+  if (list->current == NULL) return NULL;
+  
   void * dato = list->current->data;
   return dato ;
 }
 
 void * nextList(List * list) {
   list->current = list->current->next;
+  if (list->current == NULL) return NULL;
+  
   void * dato =list->current->data;
   return dato;
 }
