@@ -96,3 +96,8 @@ list.c:47:20: error: implicit declaration of function ‘next’; did you mean �
 cc1: all warnings being treated as errors
 Compilation failed
 001aca0
+Fri Mar 18 15:14:30 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+3b2a953
