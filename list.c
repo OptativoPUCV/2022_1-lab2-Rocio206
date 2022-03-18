@@ -44,7 +44,7 @@ void * firstList(List * list) {
 }
 
 void * nextList(List * list) {
-  next(list->current);
+  list->currrent = next(list);
   if (list->current == NULL) return NULL;
   
   void * dato =list->current->data;

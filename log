@@ -80,3 +80,19 @@ list.c:47:3: error: implicit declaration of function ‘next’; did you mean �
 cc1: all warnings being treated as errors
 Compilation failed
 4ed3ad7
+Fri Mar 18 15:10:52 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘nextList’:
+list.c:47:9: error: ‘List {aka struct List}’ has no member named ‘currrent’; did you mean ‘current’?
+   list->currrent = next(list);
+         ^~~~~~~~
+         current
+list.c:47:20: error: implicit declaration of function ‘next’; did you mean ‘exit’? [-Werror=implicit-function-declaration]
+   list->currrent = next(list);
+                    ^~~~
+                    exit
+cc1: all warnings being treated as errors
+Compilation failed
+001aca0
