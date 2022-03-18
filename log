@@ -136,3 +136,23 @@ Fri Mar 18 18:39:01 UTC 2022:
  tests:  5|4
 total_score: 25/70
 cf7abcf
+Fri Mar 18 18:41:01 UTC 2022: 
+ list.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘prevList’:
+list.c:61:36: error: ‘List {aka struct List}’ has no member named ‘prev’
+   if (list->current == NULL || list->prev == NULL) return NULL;
+                                    ^~
+list.c:63:23: error: ‘List {aka struct List}’ has no member named ‘prev’
+   list->current = list->prev;
+                       ^~
+list.c:64:12: error: called object is not a function or function pointer
+     return list->current NULL;
+            ^~~~
+list.c:65:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+e57a82f
