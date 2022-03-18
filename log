@@ -53,3 +53,18 @@ Fri Mar 18 15:05:09 UTC 2022:
  1 file changed, 4 insertions(+)
  tests:  0|0
 c0be75e
+Fri Mar 18 15:06:16 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘nextList’:
+list.c:47:19: error: implicit declaration of function ‘next’; did you mean ‘exit’? [-Werror=implicit-function-declaration]
+   list->current = next(list->current);
+                   ^~~~
+                   exit
+list.c:47:17: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+   list->current = next(list->current);
+                 ^
+cc1: all warnings being treated as errors
+Compilation failed
+e8fa1a2
