@@ -282,3 +282,9 @@ list.c:92:29: error: incompatible types when assigning to type ‘Node * {aka st
                              ^
 Compilation failed
 3ad9c89
+Sun Mar 20 01:33:50 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  10|2
+total_score: 45/70
+a9e24c5
