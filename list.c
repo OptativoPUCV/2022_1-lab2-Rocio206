@@ -86,6 +86,12 @@ void pushBack(List * list, void * data) {
 }
 
 void pushCurrent(List * list, void * data) {
+  Node n = createNode(data);
+  n->prev = list->current;
+  n->next = list->current->next;
+  list->current->next->prev = n;
+  
+  
 }
 
 void * popFront(List * list) {
