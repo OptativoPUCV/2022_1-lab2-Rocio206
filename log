@@ -175,3 +175,16 @@ list.c:67:12: error: called object is not a function or function pointer
             ^~~~
 Compilation failed
 84b48b0
+Sun Mar 20 00:10:17 UTC 2022: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘prevList’:
+list.c:66:23: error: ‘List {aka struct List}’ has no member named ‘prev’
+   list->current = list->prev;
+                       ^~
+list.c:67:12: error: called object is not a function or function pointer
+     return list->current NULL;
+            ^~~~
+Compilation failed
+97d1c7a
