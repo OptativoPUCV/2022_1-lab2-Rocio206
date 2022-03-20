@@ -224,3 +224,8 @@ list.c:72:9: error: ‘List {aka struct List}’ has no member named ‘haed’;
 cc1: all warnings being treated as errors
 Compilation failed
 855b112
+Sun Mar 20 00:56:11 UTC 2022: 
+ list.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+ tests:  0|0
+1dd5ad3
