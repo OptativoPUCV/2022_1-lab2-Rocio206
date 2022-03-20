@@ -206,3 +206,21 @@ Sun Mar 20 00:22:51 UTC 2022:
  tests:  9|3
 total_score: 35/70
 5cb31d2
+Sun Mar 20 00:53:23 UTC 2022: 
+ list.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:5:0:
+list.c: In function ‘pushFront’:
+list.c:68:34: error: ‘return’ with a value, in function returning void [-Werror]
+   if (list->head == NULL) return NULL;
+                                  ^~~~
+list.c:67:6: note: declared here
+ void pushFront(List * list, void * data) {
+      ^~~~~~~~~
+list.c:72:9: error: ‘List {aka struct List}’ has no member named ‘haed’; did you mean ‘head’?
+   list->haed->next = n;
+         ^~~~
+         head
+cc1: all warnings being treated as errors
+Compilation failed
+855b112
