@@ -90,8 +90,6 @@ void pushCurrent(List * list, void * data) {
   n->prev = list->current;
   n->next = list->current->next;
   list->current->next->prev = n;
-  
-  
 }
 
 void * popFront(List * list) {
@@ -105,6 +103,11 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
+
+  list->current->next->prev = list->current->prev;
+  list->current->prev->next = list->current->next;
+  list->current = list->current->next;
+  
     return NULL;
 }
 
